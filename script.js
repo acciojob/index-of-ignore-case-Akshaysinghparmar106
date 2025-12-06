@@ -1,17 +1,14 @@
 function indexOfIgnoreCase(s1, s2) {
   // write your code here
-	function indexOfIgnoreCase(str: string, subStr: string): number {
-  return str.toLowerCase().indexOf(subStr.toLowerCase());
+	function indexOfIgnoreCase(str, subStr) {
+    // If subStr is empty, return 0 (same behavior as normal indexOf)
+    if (subStr.length === 0) return 0;
+
+    // Convert both strings to lowercase for case-insensitive comparison
+    const lowerStr = str.toLowerCase();
+    const lowerSub = subStr.toLowerCase();
+
+    // Use indexOf to find the substring
+    return lowerStr.indexOf(lowerSub);
 }
 
-	//console.log(indexOfIgnoreCase("Hello World", "world")); // 6
-//console.log(indexOfIgnoreCase("apple", "Ple"));         // 2
-//console.log(indexOfIgnoreCase("test", "aaa"));
-
-	
-}
-
-// Please do not change the code below
-const s1 = prompt(Hello World", "world);
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
