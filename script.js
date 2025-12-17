@@ -5,6 +5,6 @@ function indexOfIgnoreCase(s1, s2) {
 	}
 	return s1.toLowerCase().indexof(s2.toLowerCase());
 	//console.log(indexOfIgnoreCase("apple", "ple"));
-	//console.log(indexOfIgnoreCase("Hello World", "world"));
-	console.log(indexOfIgnoreCase("test," "aaa"));
+	console.log(indexOfIgnoreCase("Hello World", "world"));
+	//console.log(indexOfIgnoreCase("test," "aaa"));
 	
